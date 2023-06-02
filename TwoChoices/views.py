@@ -3,7 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    main = "Welcome to my Django app!"
+def main(request):
     context = {"main": main}
-    return render(request, "twochoices/index.html", context)
+    return render(request, "twochoices/main.html", context)
